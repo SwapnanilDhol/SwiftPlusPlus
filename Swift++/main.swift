@@ -7,5 +7,18 @@
 
 import Foundation
 
-print("Hello, World!")
+let kDigits = "0123456789"
+
+func run(text: String) -> [String] {
+    let lexer = Lexer(text: text)
+    let tokens = lexer.makeTokens()
+    return tokens
+}
+
+while true {
+    if let str = readLine() {
+        let result = run(text: str)
+        print(result)
+    }
+}
 

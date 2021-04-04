@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		447B8C6F261A3EC100F63222 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C6E261A3EC100F63222 /* main.swift */; };
-		447B8C78261A3F0700F63222 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C77261A3F0700F63222 /* Tokens.swift */; };
+		447B8C78261A3F0700F63222 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C77261A3F0700F63222 /* TokenType.swift */; };
 		447B8C7B261A475500F63222 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C7A261A475500F63222 /* Error.swift */; };
 		447B8C7E261A4A3A00F63222 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C7D261A4A3A00F63222 /* Lexer.swift */; };
 		447B8C81261A4A4F00F63222 /* GenericType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C80261A4A4F00F63222 /* GenericType.swift */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		447B8C6B261A3EC100F63222 /* Swift++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447B8C6E261A3EC100F63222 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		447B8C77261A3F0700F63222 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		447B8C77261A3F0700F63222 /* TokenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
 		447B8C7A261A475500F63222 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		447B8C7D261A4A3A00F63222 /* Lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
 		447B8C80261A4A4F00F63222 /* GenericType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericType.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				447B8C6E261A3EC100F63222 /* main.swift */,
-				447B8C77261A3F0700F63222 /* Tokens.swift */,
+				447B8C77261A3F0700F63222 /* TokenType.swift */,
 				447B8C7A261A475500F63222 /* Error.swift */,
 				447B8C7D261A4A3A00F63222 /* Lexer.swift */,
 				447B8C80261A4A4F00F63222 /* GenericType.swift */,
@@ -143,7 +143,7 @@
 				447B8C87261A4A8D00F63222 /* StringProtocol+Substring.swift in Sources */,
 				447B8C84261A4A6400F63222 /* Token.swift in Sources */,
 				447B8C7E261A4A3A00F63222 /* Lexer.swift in Sources */,
-				447B8C78261A3F0700F63222 /* Tokens.swift in Sources */,
+				447B8C78261A3F0700F63222 /* TokenType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

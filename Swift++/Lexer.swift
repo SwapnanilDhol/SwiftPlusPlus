@@ -38,22 +38,22 @@ class Lexer {
             } else if kDigits.contains(self.currentCharacter!) {
                 tokens.append(self.makeGenericNumbers().value!)
             } else if self.currentCharacter == "+" {
-                tokens.append(TokenType.TT_PLUS.rawValue)
+                tokens.append(TokenType.plus.rawValue)
                 self.advance()
             } else if self.currentCharacter == "-" {
-                tokens.append(TokenType.TT_MINUS.rawValue)
+                tokens.append(TokenType.minus.rawValue)
                 self.advance()
             } else if self.currentCharacter == "*" {
-                tokens.append(TokenType.TT_MUL.rawValue)
+                tokens.append(TokenType.multiply.rawValue)
                 self.advance()
             } else if self.currentCharacter == "/" {
-                tokens.append(TokenType.TT_DIV.rawValue)
+                tokens.append(TokenType.divide.rawValue)
                 self.advance()
             } else if self.currentCharacter == ")" {
-                tokens.append(TokenType.TT_RPAREN.rawValue)
+                tokens.append(TokenType.rightParen.rawValue)
                 self.advance()
             } else if self.currentCharacter == "(" {
-                tokens.append(TokenType.TT_LPAREN.rawValue)
+                tokens.append(TokenType.leftParen.rawValue)
                 self.advance()
             } else {
                 let character = self.currentCharacter
@@ -82,9 +82,9 @@ class Lexer {
             self.advance()
         }
         if dotCount == 0 {
-            return Token(type: .TT_INT, value: String(numberString))
+            return Token(type: .int, value: String(numberString))
         } else {
-            return Token(type: .TT_FLOAT, value: String(numberString))
+            return Token(type: .float, value: String(numberString))
         }
     }
 }

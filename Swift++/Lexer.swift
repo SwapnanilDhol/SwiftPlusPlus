@@ -9,21 +9,23 @@ import Foundation
 
 class Lexer {
 
+    let fileName: String
     let text: String
-    var position: Int
+    var position: Position
     var currentCharacter: Character?
 
-    init(text: String) {
+    init(fileName: String, text: String) {
+        self.fileName = fileName
         self.text = text
-        self.position = -1
+        self.position = Position(index: -1, lineNumber: 0, columnNumber: -1, fileName: self.fileName, fileText: self.text)
         self.currentCharacter = nil
         self.advance()
     }
 
     func advance() {
-        self.position += 1
-        if self.position < self.text.count {
-            self.currentCharacter = self.text[self.position]
+        self.position.advance(currentCharacter: self.currentCharacter)
+        if self.position.index < self.text.count {
+            self.currentCharacter = self.text[self.position.index]
         } else {
             self.currentCharacter = nil
         }
@@ -56,9 +58,13 @@ class Lexer {
                 tokens.append(TokenType.leftParen.rawValue)
                 self.advance()
             } else {
+                let positionStart = self.position.copy()
                 let character = self.currentCharacter
                 self.advance()
-                Error(errorType: .illegalCharacterError, value: character!).asString()
+                Error(errorType: .illegalCharacterError,
+                      value: character!,
+                      positionStart: positionStart,
+                      positionEnd: self.position).asString()
                 return []
             }
         }

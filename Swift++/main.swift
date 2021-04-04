@@ -9,15 +9,15 @@ import Foundation
 
 let kDigits = "0123456789"
 
-func run(text: String) -> [String] {
-    let lexer = Lexer(text: text)
+func run(fileName: String, text: String) -> [String] {
+    let lexer = Lexer(fileName: fileName, text: text)
     let tokens = lexer.makeTokens()
     return tokens
 }
 
 while true {
     if let str = readLine() {
-        let result = run(text: str)
+        let result = run(fileName: "<stdin>", text: str)
         print(result)
     }
 }

@@ -14,6 +14,7 @@
 		447B8C81261A4A4F00F63222 /* GenericType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C80261A4A4F00F63222 /* GenericType.swift */; };
 		447B8C84261A4A6400F63222 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C83261A4A6400F63222 /* Token.swift */; };
 		447B8C87261A4A8D00F63222 /* StringProtocol+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C86261A4A8D00F63222 /* StringProtocol+Substring.swift */; };
+		447B8C8B261A4DAF00F63222 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B8C8A261A4DAF00F63222 /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		447B8C80261A4A4F00F63222 /* GenericType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericType.swift; sourceTree = "<group>"; };
 		447B8C83261A4A6400F63222 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		447B8C86261A4A8D00F63222 /* StringProtocol+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Substring.swift"; sourceTree = "<group>"; };
+		447B8C8A261A4DAF00F63222 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				447B8C80261A4A4F00F63222 /* GenericType.swift */,
 				447B8C83261A4A6400F63222 /* Token.swift */,
 				447B8C86261A4A8D00F63222 /* StringProtocol+Substring.swift */,
+				447B8C8A261A4DAF00F63222 /* Position.swift */,
 			);
 			path = "Swift++";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				447B8C87261A4A8D00F63222 /* StringProtocol+Substring.swift in Sources */,
 				447B8C84261A4A6400F63222 /* Token.swift in Sources */,
 				447B8C7E261A4A3A00F63222 /* Lexer.swift in Sources */,
+				447B8C8B261A4DAF00F63222 /* Position.swift in Sources */,
 				447B8C78261A3F0700F63222 /* TokenType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

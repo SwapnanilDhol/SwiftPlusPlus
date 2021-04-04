@@ -8,12 +8,12 @@
 import Foundation
 
 enum TokenType: String {
-    case TT_INT = "TT_INT"
-    case TT_FLOAT = "FLOAT"
-    case TT_PLUS = "PLUS"
-    case TT_MINUS = "MINUS"
-    case TT_MUL = "MUL"
-    case TT_DIV = "DIV"
-    case TT_LPAREN = "LPAREN"
-    case TT_RPAREN = "RPAREN"
+    case int = "TT_INT"
+    case float = "FLOAT"
+    case plus = "PLUS"
+    case minus = "MINUS"
+    case multiply = "MUL"
+    case divide = "DIV"
+    case leftParen = "LPAREN"
+    case rightParen = "RPAREN"
 }
